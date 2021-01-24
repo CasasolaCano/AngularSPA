@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 //Rutas
 import { APP_ROUTING } from './app.routes';
 
+//Servicios
+
+import { AlbumsService } from './services/albums.services';
+
 
 
 //Componentes
@@ -23,9 +27,11 @@ import { AlbumsComponent } from './components/albums/albums.component';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING           //El routing se coloca en los imports
   ],
-  providers: [],
+  providers: [            //Los servicios se colocan en los providers
+    AlbumsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
