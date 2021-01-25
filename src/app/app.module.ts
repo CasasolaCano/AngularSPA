@@ -16,6 +16,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { AlbumsComponent } from './components/albums/albums.component';
+import { AlbumComponent } from './components/album/album.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AlbumsComponent } from './components/albums/albums.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    AlbumsComponent
+    AlbumsComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,
