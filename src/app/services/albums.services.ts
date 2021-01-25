@@ -7,46 +7,46 @@ export class AlbumsService {
 
     private albums:Album[] = [
         {
-          nombre: "Aquaman",
-          bio: "El poder más reconocido de Aquaman es la capacidad telepática para comunicarse con la vida marina, la cual puede convocar a grandes distancias.",
-          img: "assets/img/aquaman.png",
-          launch: "1941-11-01",
-          author:"DC"
+          nombre: "In the Court of the Crimson King",
+          bio: "In the Court of the Crimson King (subtitled An Observation by King Crimson) is the debut studio album by English rock band King Crimson, released on 10 October 1969 by Island Records. The album is one of the first and most influential of the progressive rock genre, where the band combined the blues influences that rock music was founded upon with elements of jazz, classical, and symphonic music.",
+          img: "assets/resources/img/king-crimson-court.jpg",
+          launch: "1969",
+          author:"King Crimson"
         },
         {
-          nombre: "Batman",
-          bio: "Los rasgos principales de Batman se resumen en «destreza física, habilidades deductivas y obsesión». La mayor parte de las características básicas de los cómics han variado por las diferentes interpretaciones que le han dado al personaje.",
-          img: "assets/img/batman.png",
-          launch: "1939-05-01",
-          author:"DC"
+          nombre: "Fragile",
+          bio: "Fragile is the fourth studio album by the English progressive rock band Yes, released on 26 November 1971 by Atlantic Records. It was the band's first album to feature keyboardist Rick Wakeman, who replaced founder member Tony Kaye after the group had finished touring their breakthrough record, The Yes Album.",
+          img: "assets/resources/img/yes-fragile.jpg",
+          launch: "11-26-1971",
+          author:"Yes"
         },
         {
-          nombre: "Daredevil",
-          bio: "Al haber perdido la vista, los cuatro sentidos restantes de Daredevil fueron aumentados por la radiación a niveles superhumanos, en el accidente que tuvo cuando era niño. A pesar de su ceguera, puede \"ver\" a través de un \"sexto sentido\" que le sirve como un radar similar al de los murciélagos.",
-          img: "assets/img/daredevil.png",
-          launch: "1964-01-01",
-          author: "Marvel"
+          nombre: "Mirage",
+          bio: "There are five tracks on Mirage, two over 9 minutes. Those two are multi-part songs: 'Lady Fantasy' and 'Nimrodel/The Procession/The White Rider', the latter being about The Lord of the Rings. The album was released on Gama Records/Deram Records. Mick Rock shot the inner sleeve photo.",
+          img: "assets/resources/img/mirage.jpg",
+          launch: "04-01-1974",
+          author: "Camel"
         },
         {
-          nombre: "Hulk",
-          bio: "Su principal poder es su capacidad de aumentar su fuerza hasta niveles prácticamente ilimitados a la vez que aumenta su furia. Dependiendo de qué personalidad de Hulk esté al mando en ese momento (el Hulk Banner es el más débil, pero lo compensa con su inteligencia).",
-          img: "assets/img/hulk.png",
-          launch: "1962-05-01",
-          author:"Marvel"
+          nombre: "Moving Pictures",
+          bio: "Moving Pictures is the eighth studio album by Canadian rock band Rush, released on February 12, 1981, through Anthem Records. After touring to support their previous album, Permanent Waves (1980), the band started to write and record new material in August 1980 with co-producer Terry Brown.",
+          img: "assets/resources/img/moving-pictures-rush.jpg",
+          launch: "02-12-1981",
+          author:"Rush"
         },
         {
-          nombre: "Linterna Verde",
-          bio: "Poseedor del anillo de poder que posee la capacidad de crear manifestaciones de luz sólida mediante la utilización del pensamiento. Es alimentado por la Llama Verde (revisada por escritores posteriores como un poder místico llamado Starheart), una llama mágica contenida en dentro de un orbe (el orbe era en realidad un meteorito verde de metal que cayó a la Tierra, el cual encontró un fabricante de lámparas llamado Chang)",
-          img: "assets/img/linterna-verde.png",
-          launch: "1940-06-01",
-          author: "DC"
+          nombre: "Lizard",
+          bio: "Lizard is the third studio album by British progressive rock band King Crimson, released in December 1970 by Island Records in the UK, and in January 1971 by Atlantic Records in the United States and Canada.",
+          img: "assets//resources/img/lizard-crimson.jpg",
+          launch: "12-10-1970",
+          author: "King Crimson"
         },
         {
-          nombre: "Spider-Man",
-          bio: "Tras ser mordido por una araña radiactiva, obtuvo los siguientes poderes sobrehumanos, una gran fuerza, agilidad, poder trepar por paredes. La fuerza de Spider-Man le permite levantar 10 toneladas o más. Gracias a esta gran fuerza Spider-Man puede realizar saltos íncreibles. Un \"sentido arácnido\", que le permite saber si un peligro se cierne sobre él, antes de que suceda. En ocasiones este puede llevar a Spider-Man al origen del peligro.",
-          img: "assets/img/spiderman.png",
-          launch: "1962-08-01",
-          author: "Marvel"
+          nombre: "Pawn Hearts",
+          bio: "Pawn Hearts is the fourth album by English progressive rock band Van der Graaf Generator, released in October 1971 on Charisma Records.",
+          img: "assets/resources/img/pawn-hearts.jpg",
+          launch: "10-xx-1971",
+          author: "Van der Graaf Generator"
         }
       ];
 
