@@ -1,1 +1,29 @@
-<p>album works!</p>
+<h1 class="animated fadeIn fast">{{album.nombre}} <small>{{album.launch}}</small></h1>
+<hr>
+
+<div class="row animated fadeIn">
+
+    <div class="col-md-4">
+
+        <img [src]="album.img" class="img-fluid" [alt]="album.nombre">
+        <br><br>
+
+        <a [routerLink]="['/albums']" class="btn btn-outline-danger btn-block">Regresar</a>
+
+    </div>
+
+    <div class="col-md-8">
+
+        <h3>{{album.nombre}}</h3>
+        <hr>
+        <p>
+            {{album.bio}}
+        </p>
+        <div>
+            <img class="authorImg" [src]="album.author" [alt]="album.author">
+        </div>
+
+
+    </div>
+
+</div>
