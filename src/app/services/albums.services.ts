@@ -57,6 +57,10 @@ export class AlbumsService {
     getAlbums():Album[] {
         return this.albums;
     }
+
+    getAlbum(idx:number) {
+      return this.albums[idx];
+    }
 }
 
 export interface Album {
