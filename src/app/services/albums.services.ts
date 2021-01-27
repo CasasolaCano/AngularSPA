@@ -61,6 +61,25 @@ export class AlbumsService {
     getAlbum(idx:number) {
       return this.albums[idx];
     }
+
+    searchAlbums( termino:string):Album[] {
+
+      let albumsArr:Album[] = [];
+      termino = termino.toLowerCase();
+
+      for(let album of this.albums) {
+
+        let name = album.nombre.toLowerCase();
+
+        if(name.indexOf(termino) >= 0) {
+          albumsArr.push(album)
+        }
+
+      }
+
+      return albumsArr;
+
+    }
 }
 
 export interface Album {

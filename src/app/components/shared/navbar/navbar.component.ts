@@ -12,4 +12,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  searchAlbum(termino:string) {
+    console.log(termino);
+  }
+
 }
