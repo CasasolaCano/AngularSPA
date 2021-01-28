@@ -1,0 +1,19 @@
+<h1>Albums <small>Classic Progressive Rock</small></h1>
+
+<div class="card-columns">
+
+    <div class="card animated fadeIn fast" *ngFor="let album of albums; let i = index">
+        <img [src]="album.img" class="card-img-top" [alt]="album.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{album.nombre}}</h5>
+            <p class="card-text">{{album.bio}}</p>
+            <p class="card-text"><small class="text-muted">{{ album.launch }}</small></p>
+
+            <button (click)="verAlbum(i)" type="button" class="btn btn-outline-primary btn-block">
+                Ver más...
+            </button>
+
+        </div>
+    </div>
+
+</div>

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { AlbumsService, Album } from '../../../services/albums.services';
+import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-navbar',
@@ -7,13 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _albumsService:AlbumsService, private _router:Router) {
+
+   }
 
   ngOnInit(): void {
   }
 
   searchAlbum(termino:string) {
-    console.log(termino);
+    this._router.navigate(['/albums', termino]);
   }
 
 }
