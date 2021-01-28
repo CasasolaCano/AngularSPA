@@ -12,15 +12,18 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class SearchAlbumsComponent implements OnInit {
 
   albums:Album[] = [];
+  termino:string = "";
 
   constructor(private _albumsService:AlbumsService, private _activatedRoute:ActivatedRoute) {
 
-    this._activatedRoute.params.subscribe(params => {
-      this.albums = this._albumsService.searchAlbums(params['termino']);
-    })
-   }
+    
+  }
 
   ngOnInit(): void {
+    this._activatedRoute.params.subscribe(params => {
+      this.termino = params['termino'];
+      this.albums = this._albumsService.searchAlbums(params['termino']);
+    })
 
   }
 

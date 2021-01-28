@@ -24,7 +24,7 @@
 
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" (keyup.enter)="searchAlbum(searchText.value)" #searchText>
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" (keyup)="searchAlbum(searchText.value)" #searchText>
             <button (click)="searchAlbum(searchText.value)" class="btn btn-outline-primary my-2 my-sm-0" type="button">Search</button>
         </form>
     </div>

@@ -1,19 +1,17 @@
 <h1>Albums <small>Classic Progressive Rock</small></h1>
+<hr>
+
+<div class="row" *ngIf="albums.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existen resultados con el termino {{this.termino}}
+        </div>
+    </div>
+</div>
+
 
 <div class="card-columns">
 
-    <div class="card animated fadeIn fast" *ngFor="let album of albums; let i = index">
-        <img [src]="album.img" class="card-img-top" [alt]="album.nombre">
-        <div class="card-body">
-            <h5 class="card-title">{{album.nombre}}</h5>
-            <p class="card-text">{{album.bio}}</p>
-            <p class="card-text"><small class="text-muted">{{ album.launch }}</small></p>
-
-            <button (click)="verAlbum(i)" type="button" class="btn btn-outline-primary btn-block">
-                Ver más...
-            </button>
-
-        </div>
-    </div>
+    <app-album-tarjeta [album]="album" [index]="i" *ngFor="let album of albums; let i = index"></app-album-tarjeta>
 
 </div>
