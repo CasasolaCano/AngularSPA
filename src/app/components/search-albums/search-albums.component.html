@@ -12,6 +12,6 @@
 
 <div class="card-columns">
 
-    <app-album-tarjeta [album]="album" [index]="i" *ngFor="let album of albums; let i = index"></app-album-tarjeta>
+    <app-album-tarjeta [album]="album" [index]="album.idx" *ngFor="let album of albums"></app-album-tarjeta>
 
 </div>

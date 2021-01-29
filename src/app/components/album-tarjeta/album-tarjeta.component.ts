@@ -24,7 +24,7 @@ export class AlbumTarjetaComponent implements OnInit {
   }
 
   verAlbum() {
-    // this._router.navigate(['/album', this.index]);
+    this._router.navigate(['/album', this.index]);
     this.albumSelected.emit(this.index);
   }
 

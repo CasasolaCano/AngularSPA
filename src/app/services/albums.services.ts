@@ -67,11 +67,14 @@ export class AlbumsService {
       let albumsArr:Album[] = [];
       termino = termino.toLowerCase();
 
-      for(let album of this.albums) {
+      for(let i = 0; i < this.albums.length; i++) {
+
+        let album = this.albums[i];
 
         let name = album.nombre.toLowerCase();
 
         if(name.indexOf(termino) >= 0) {
+          album.idx = i;
           albumsArr.push(album)
         }
 
@@ -88,4 +91,5 @@ export interface Album {
     img:string;
     launch:string;
     author:string;
+    idx?: number;
 }
