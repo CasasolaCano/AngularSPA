@@ -3,5 +3,5 @@
 <div class="card-columns">
 
 
-    <app-album-tarjeta [album]="album" [index]="i" *ngFor="let album of albums; let i = index"></app-album-tarjeta>
+    <app-album-tarjeta (albumSelected)="verAlbum($event)" [album]="album" [index]="i" *ngFor="let album of albums; let i = index"></app-album-tarjeta>
 </div>
